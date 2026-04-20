@@ -6,17 +6,41 @@
         <title>Animal Friends Infinite Stairs</title>
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
-
-    
   </head>
-  <body><
-              <div id="game-container">
-                        <canvas id="gameCanvas"></canvas>
-                        <div id="ui-layer">
-                                      <div id="top-bar">
-                                                        <div id="score-container">
-                                                                              Score: <span id="score">0</span> &nbsp;&nbsp; <span id="bonus-label">Carrot</span>: <span id="carrots">0</span><span id="bonus-emoji">(Carrot)</span>
-                                                        </div>
-                                                        <div id="timer-bar-container"><div id="timer-bar"></div></div>
-                                      </div>/body>
+<body>
+      <div id="game-container">
+                <canvas id="gameCanvas"></canvas>canvas>
+                <div id="ui-layer">
+                              <div id="top-bar">
+                                                <div id="score-container">
+                                                                      Score: <span id="score">0</span>span> &nbsp;&nbsp; <span id="bonus-label">Carrot</span>span>: <span id="carrots">0</span>span><span id="bonus-emoji">(Carrot)</span>span>
+                                                </div>div>
+                                                <div id="timer-bar-container"><div id="timer-bar"></div>div></div>div>
+                              </div>div>
+                              <div id="start-screen" class="screen">
+                                                <h1>Animal Friends<br>Infinite Stairs</h1>
+                                              <p>Press Arrow Keys <- -> to Jump!<br>Mobile: Touch the buttons!</p>
+                                              
+                                              <div class="selection-container">
+                                                                  <h3>Enter Nickname</h3>
+                                                                  <input type="text" id="nickname-input" placeholder="Name (max 10 chars)" maxlength="10" style="font-family:'Jua'; padding: 8px; border-radius: 8px; border: 2px solid #ff7675; text-align: center; width: 80%; margin-bottom: 20px; font-size: 18px;">
+                                              
+                                                                  <h3>Select Character</h3>
+                                                                  <div id="character-select" class="select-group">
+                                                                                          <div class="select-option active" data-char="rabbit">[Rabbit] Rabbit</div>div>
+                                                                                          <div class="select-option" data-char="panda">[Panda] Panda</div>div>
+                                                                                          <div class="select-option" data-char="tiger">[Tiger] Tiger</div>div>
+                                                                  </di>div>
+                                              </div>div>
+                              
+                                              <button id="start-btn">Start Game</button>button
+                              </div>div>
+                            <div id="game-over-screen" class="screen hidden">
+                                            <h1>Game Over!</h1>
+                                            <p>Final Score: <span id="final-score">0</span>span></p>
+                                            <p style="margin-top:-15px;">Got <span id="final-bonus-label">Bonus</span>span>: <span id="final-carrots">0</span>span><span id="final-bonus-emoji">(Carrot)</span>span></p>
+                                            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
+                                                                <button id="restart-btn" style="font-size: 20px; padding: 12px 25px;">Restart</button>button>
+                                                                <button id="home-btn"</p></p></h1>
+</body></title>
+  </head>
