@@ -1,0 +1,18 @@
+{
+    "name": "infinite-rabbit-stairs",
+    "version": "1.0.0",
+    "description": "Animal Friends Infinite Stairs - Leaderboard Support Version",
+    "main": "server.js",
+    "scripts": {
+          "start": "node server.js",
+          "dev": "node server.js"
+    },
+    "keywords": [
+          "game",
+          "infinite-stairs",
+          "rabbit"
+    ],
+    "author": "Antigravity AI",
+    "license": "MIT",
+    "dependencies": {}
+}
