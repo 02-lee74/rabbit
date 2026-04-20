@@ -1,0 +1,18 @@
+{
+  "name": "infinite-rabbit-stairs",
+  "version": "1.0.0",
+  "description": "동물 친구들 무한의 계단 - 리더보드 지원 버전",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "game",
+    "infinite-stairs",
+    "rabbit"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT",
+  "dependencies": {}
+}

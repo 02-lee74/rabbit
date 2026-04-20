@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아기 토끼 무한의 계단</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="top-bar">
+                <div id="score-container">
+                    점수: <span id="score">0</span> &nbsp;&nbsp; <span id="bonus-label">당근</span>: <span id="carrots">0</span><span id="bonus-emoji">🥕</span>
+                </div>
+                <div id="timer-bar-container"><div id="timer-bar"></div></div>
+            </div>
+            <div id="start-screen" class="screen">
+                <h1>동물 친구들<br>무한의 계단</h1>
+                <p>방향키 ⬅️ ➡️ 를 눌러 점프하세요!<br>모바일은 하단 버튼 터치!</p>
+                
+                <div class="selection-container">
+                    <h3>닉네임 입력</h3>
+                    <input type="text" id="nickname-input" placeholder="이름을 입력하세요 (최대 10자)" maxlength="10" style="font-family:'Jua'; padding: 8px; border-radius: 8px; border: 2px solid #ff7675; text-align: center; width: 80%; margin-bottom: 20px; font-size: 18px;">
+
+                    <h3>캐릭터 선택</h3>
+                    <div id="character-select" class="select-group">
+                        <div class="select-option active" data-char="rabbit">🐰 분홍토끼</div>
+                        <div class="select-option" data-char="panda">🐼 아기팬더</div>
+                        <div class="select-option" data-char="tiger">🐯 아기백호</div>
+                    </div>
+
+
+                </div>
+
+                <button id="start-btn">게임 시작 (로딩중...)</button>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h1>게임 오버!</h1>
+                <p>최종 점수: <span id="final-score">0</span></p>
+                <p style="margin-top:-15px;">획득 <span id="final-bonus-label">당근</span>: <span id="final-carrots">0</span><span id="final-bonus-emoji">🥕</span></p>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 10px;">
+                    <button id="restart-btn" style="font-size: 20px; padding: 12px 25px;">바로 다시 시작</button>
+                    <button id="home-btn" style="background-color: #0984e3; font-size: 20px; padding: 12px 25px;">처음으로 (설정 진입)</button>
+                </div>
+                
+                <div id="leaderboard-section" style="margin-top: 25px; background: rgba(255,255,255,0.9); border-radius: 12px; padding: 15px; max-height: 200px; overflow-y: auto;">
+                    <h3 style="color:#ff7675; margin-top:0;">🏆 Top 20 리더보드</h3>
+                    <div id="leaderboard-list" style="font-size: 16px; color:#2d3436;">
+                        로딩 중...
+                    </div>
+                </div>
+            </div>
+            <div id="controls" class="hidden">
+                <button id="btn-left" class="control-btn">⬅️ 왼쪽</button>
+                <button id="btn-right" class="control-btn">오른쪽 ➡️</button>
+            </div>
+        </div>
+    </div>
+    <script src="assetsData.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
